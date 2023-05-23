@@ -18,6 +18,7 @@ let storages = multer.diskStorage({
 })
 
 let upload = multer({
+    limits: { fieldSize: 10 * 1024 * 1024 },
     storage:storages
 }).single('image')
 
