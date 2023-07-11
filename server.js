@@ -1,9 +1,9 @@
-const express = require('express');
-const multer = require('multer');
-const fs = require('fs');
+const express = require('express');//creer le serveur
+const multer = require('multer');//pour gerer les images
+const fs = require('fs');//gerer la lecture et l'ecriture de fichier
 const cors = require('cors');
-const mongoose = require('mongoose');
-require('dotenv').config();
+const mongoose = require('mongoose'); // se connecter à la BD
+require('dotenv').config();// gerer les variables environnements
 
 const app = express();
 const PORT = process.env.PORT;
